@@ -1,9 +1,10 @@
 while True:
     reply = input('Введите текст:')
-    if reply == 'стоп':
-        break
-    elif not reply.isdigit():
+    if reply == 'стоп': break
+    try:
+        num = int(reply)
+    except:
         print('bad'*8)
     else:
-        print(int(reply)**2)
+        print(num**2)
 print('bye')
