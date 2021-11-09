@@ -1,5 +1,5 @@
 while True:
-    reply = input('Введите текс:')
+    reply = input('Введите текст:')
     if reply == 'стоп':
         break
     elif not reply.isdigit():
