@@ -1,0 +1,8 @@
+if 'адрес' in client_message:
+    moscow_in_message = 'Москв' in client_message or 'мск' in client_message
+    piter_in_message = 'Петербург' in client_message or 'Питер' in client_message
+    city_is_not_mentioned = not (moscow_in_message or piter_in_message)
+    if moscow_in_message or city_is_not_mentioned:
+        print('Москва, ул. Льва Толстого, 16')
+    if piter_in_message or city_is_not_mentioned:
+        print('Санкт-Петербург, Пискаревский проспект, 2, корп. 2')
